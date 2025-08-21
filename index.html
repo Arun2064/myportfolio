@@ -2,35 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Akula | Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; }
-    header { background: #333; color: #fff; text-align: center; padding: 20px; }
-    section { padding: 20px; max-width: 800px; margin: auto; background: #fff; margin-top: 20px; border-radius: 8px; }
-    h1, h2 { color: #333; }
-    img { max-width: 150px; border-radius: 50%; display: block; margin: 10px auto; }
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin: 20px auto;
+      display: block;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #f0f4f8;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    strong {
+      color: #1e3a8a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 40px 15px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <img src="arun.jpg" alt="Arun Akula" class="profile-pic">
+    <h1>Arun Akula</h1>
+    <p>B.Tech Student | Web Development | Cyber Security | Robotics</p>
   </header>
-  
-  <section>
+
+  <section id="about">
     <h2>About Me</h2>
     <p><strong>Name:</strong> Arun Akula</p>
     <p><strong>Education:</strong> B.Tech Student</p>
     <p><strong>Interests:</strong> Web Development, Cyber Security, Robotics</p>
-    <img src="https://via.placeholder.com/150" alt="My Photo">
   </section>
-  <section>
+
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Project Alpha:</strong> web design.</li>
-      <li><strong>Project Beta:</strong>  robotics.</li>
-      <li><strong>Project Gamma:</strong> cyber security.</li>
+      <li><strong>Project Alpha:</strong> Web Design</li>
+      <li><strong>Project Beta:</strong> Robotics</li>
+      <li><strong>Project Gamma:</strong> Cyber Security</li>
     </ul>
   </section>
 
+  <footer>
+    © 2025 Arun Akula. All rights reserved.
+  </footer>
 </body>
 </html>
